@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        #menu, #menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #menu {
+            width: 90%;
+            margin: 60px auto;
+            border: 1px solid #107677;
+            background: #111;
+            background: linear-gradient(#1ebdbe, #107677);
+            border-radius: 6px;
+            box-shadow: 0 2px 2px #ccc;
+        }
+        
+        #menu li {
+            float: left;
+            position: relative;
+        }
+        
+        #menu a {
+            float: left;
+            padding: 12px 50px;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font: normal 12px Arial;
+        }
+        #menu ul {
+            margin: 20px;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute; 
+            top: 38px;
+            left: 0;
+            /* z-index: 1;*/
+            background: linear-gradient(#1ebdbe, #107677);
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, .3);
+            border-radius: 3px;
+            /* transition: all .2s ease-in-out; */
+        }
+        
+        #menu li:hover > ul {
+            opacity: 1;
+            visibility: visible;
+            margin: 0;
+        }
+        #menu ul ul {
+            top: 0;
+            left: 140px;
+            margin: 0 0 0 20px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, .3);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="menu-wrap">
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#news">News</a>
+                <ul>
+                    <li><a href="#">Z kraju</a>
+                        <ul>
+                            <li><a href="#">Polityka</a></li>
+                            <li><a href="#">Gospordarka</a></li>
+                            <li><a href="#">Pogoda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Ze swiata</a>
+                        <ul>
+                            <li><a href="#">Europa</a></li>
+                            <li><a href="#">Amerka</a></li>
+                            <li><a href="#">Azja</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <p>A background color is added to the links to show the link area.</p>
+    <p>Notice that the whole link area is clickable, not just the text.</p>
+
+</body>
+
+</html>
